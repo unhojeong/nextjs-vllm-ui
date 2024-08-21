@@ -13,8 +13,8 @@ RUN sed -Ei \
 
 ENV NODE_ENV=production
 ENV NEXT_TELEMETRY_DISABLED=1
-ENV VLLM_URL="https://api.runpod.ai/v2/vllm-nmemgvo49tm9uh/openai/v1"
-ENV VLLM_API_KEY="07HU321W2RS3ACN5LJ7BRXLFO2ENMDJX47RJOEWZ"
+ENV VLLM_URL=""
+ENV VLLM_API_KEY=""
 
 COPY . .
 RUN yarn build
